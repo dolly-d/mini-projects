@@ -5,7 +5,9 @@ function calculateTip(){
 
     if(billAmt === "" || service===0){
         alert("please enter a value")
+        return
     }
+     if
 }
 
 document.getElementById("calculate").addEventListener("click", function(){
