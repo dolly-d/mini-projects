@@ -7,7 +7,10 @@ function calculateTip(){
         alert("please enter a value")
         return
     }
-     if
+     if(numofPeople === "" || numOfPeople<+1){
+         numOfPeople = 1
+         document.getElementById("each").style.display="none"
+     }
 }
 
 document.getElementById("calculate").addEventListener("click", function(){
