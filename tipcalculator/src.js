@@ -10,7 +10,12 @@ function calculateTip(){
      if(numofPeople === "" || numOfPeople<+1){
          numOfPeople = 1
          document.getElementById("each").style.display="none"
+     } else {
+         document.getElementById("each").style.display = "block"
      }
+
+     let total = (billAmt * service) / numofPeople
+     toal = Math.round(total * 100) / 100
 }
 
 document.getElementById("calculate").addEventListener("click", function(){
