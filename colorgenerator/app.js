@@ -5,11 +5,11 @@ const randomNumber = (min,max) => {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-const randomRGB =()=>{
+const randomRGB = () =>[
+    randomNumber(0, 255),
+    randomNumber(0, 255),
     randomNumber(0, 255)
-    randomNumber(0, 255)
-    randomNumber(0, 255)
-}
+]
 
 const currentValueSpan = document.getElementById("value")
 
