@@ -15,7 +15,7 @@ const currentValueSpan = document.getElementById("value")
 
 document.getElementById("generate").addEventListener("click", function(e){
     const rgb = randomRGB()
-    const content = `rgb(${rgb[0]}, rgb(${rgb[1]}, rgb(${rgb[2]})`
+    const content = `rgb(${rgb[0]}), rgb(${rgb[1]}), rgb(${rgb[2]})`
 
     document.documentElement.style.setProperty('--current-value', content)
     currentValueSpan.textContent = content
