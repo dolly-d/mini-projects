@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     createPlatforms=()=>{
         for (let i =0; i < platformCount; i++){
-
+            let platformSpace = 600 / platformCount
+            let newPlatformBottom = 100 + i * platformSpace
         }
     }
 
