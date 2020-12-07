@@ -7,7 +7,7 @@ function calculateTip(){
         alert("please enter a value")
         return
     }
-     if(numofPeople === "" || numOfPeople<+1){
+     if(numofPeople === "" || numOfPeople<= 1){
          numOfPeople = 1
          document.getElementById("each").style.display="none"
      } else {
