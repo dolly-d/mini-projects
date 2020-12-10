@@ -17,6 +17,8 @@ function calculateTip(){
      let total = (billAmt * service) / numofPeople
      total = Math.round(total * 100) / 100
      total = total.toFixed(2)
+     
+     document.getElementById("totalTip").style.display = "block"
 }
 
 document.getElementById("calculate").addEventListener("click", function(){
