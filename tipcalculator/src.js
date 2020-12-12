@@ -22,6 +22,8 @@ function calculateTip(){
      document.getElementById("tip").innerHTML = total
 }
 
+document.getElementById("totalTip").style.display = "none"
+
 document.getElementById("calculate").addEventListener("click", function(){
     calculateTip()
 })
