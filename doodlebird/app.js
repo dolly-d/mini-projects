@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const doodler = document.createElement('div')
     let doodlerLeftSpace = 50
     let doodlerBottomSpace = 150
+    let isGameOver = false
     let platformCount = 5
 
     createDoodler =()=>{
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         for (let i =0; i < platformCount; i++){
             let platformSpace = 600 / platformCount
             let newPlatformBottom = 100 + i * platformSpace
-            let newPlatform = new Platform()
+            let newPlatform = new Platform(newPlatformBottom)
         }
     }
 
