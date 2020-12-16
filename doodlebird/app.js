@@ -11,4 +11,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
         doodler.style.bottom = doodlerBottomSpace + 'px'
     }
     createDoodler()
+
+    start =()=>{
+        if (!isGameOver) {
+            createDoodler()
+        }
+    }
 })
