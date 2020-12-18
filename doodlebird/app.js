@@ -13,10 +13,18 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
     createDoodler()
 
+    class Platform{
+        constructor(newPlatformBottom){
+            this.bottom = newPlatformBottom
+            this.left = Math.random() * 315
+        }
+    }
+
     createPlatforms=()=>{
         for (let i =0; i < platformCount; i++){
             let platformSpace = 600 / platformCount
             let newPlatformBottom = 100 + i * platformSpace
+            let newPlatform = new Platform()
         }
     }
 
