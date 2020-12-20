@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let doodlerBottomSpace = 150
     let isGameOver = false
     let platformCount = 5
+    let platforms = []
 
     createDoodler =()=>{
         grid.appendChild(doodler)
@@ -33,6 +34,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
             let platformSpace = 600 / platformCount
             let newPlatformBottom = 100 + i * platformSpace
             let newPlatform = new Platform(newPlatformBottom)
+            platforms.push(newPlatform)
+            console.log(platforms)
         }
     }
 
