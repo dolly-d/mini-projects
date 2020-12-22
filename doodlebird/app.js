@@ -35,7 +35,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
             let newPlatformBottom = 100 + i * platformSpace
             let newPlatform = new Platform(newPlatformBottom)
             platforms.push(newPlatform)
-            console.log(platforms)
+            // console.log(platforms)
+        }
+    }
+    movePlatforms=()=>{
+        if (doodlerBottomSpace > 200){
+            platforms.forEach(platform => {
+                platform.bottom -= 4
+                let visual = platform.visual
+                visual.style.bottom = platform.bottom + 'px'
+            })
         }
     }
 
@@ -43,6 +52,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         if (!isGameOver) {
             createDoodler()
             createPlatforms()
+            movePlatforms()
         }
     }
     start()
