@@ -64,7 +64,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
         downTimerId = setInterval(() => {
             doodlerBottomSpace -= 5
             doodler.style.bottom = doodlerBottomSpace + 'px'
+            if (doodlerBottomSpace <= 0){
+                gameOver()
+            }
         }, 30);
+    }
+    gameOver=()=>{
+        console.log('game over')
+        isGameOver = true
+        clearInterval(upTimerId)
+        clearInterval(downTimerId)
     }
 
     start =()=>{
