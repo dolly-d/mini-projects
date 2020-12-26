@@ -98,9 +98,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
         clearInterval(downTimerId)
     }
     
-    control=()=>{
+    control=(e)=>{
         if (e.key === 'ArrowLeft'){
-            //move left
+            moveLeft()
         } else if (e.key === 'ArrowRight'){
             //moveright
         }else if (e.key === 'ArrowUp'){
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     moveLeft=()=>{
         isGoingLeft = true 
-        leftTimerId = setInterval(() =>{
+        leftTimerId = setInterval(function () {
             doodlerLeftSpace -= 5
             doodler.style.left = doodlerLeftSpace + 'px'
 
@@ -123,6 +123,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             createDoodler()
             setInterval(movePlatforms, 30)
             jump()
+            document.addEventListener('keyup',control)
         }
     }
     start()
