@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
     createDoodler =()=>{
         grid.appendChild(doodler)
         doodler.classList.add('doodler')
+        doodlerLeftSpace = platforms[0].left
         doodler.style.left = doodlerLeftSpace +'px'
         doodler.style.bottom = doodlerBottomSpace + 'px'
     }
-    createDoodler()
 
     class Platform{
         constructor(newPlatformBottom){
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             let newPlatformBottom = 100 + i * platformSpace
             let newPlatform = new Platform(newPlatformBottom)
             platforms.push(newPlatform)
-            // console.log(platforms)
+            console.log(platforms)
         }
     }
     movePlatforms=()=>{
@@ -78,8 +78,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     start =()=>{
         if (!isGameOver) {
-            createDoodler()
             createPlatforms()
+            createDoodler()
             setInterval(movePlatforms, 30)
             jump()
         }
