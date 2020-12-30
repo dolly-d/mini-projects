@@ -58,7 +58,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     firstPlatform.classList.remove('platform')
                     platforms.shift()
                     console.log(platforms)
-                    let newPlatform = new Platform()
+                    let newPlatform = new Platform(600)
+                    platforms.push(newPlatform)
                 }
             })
         }
