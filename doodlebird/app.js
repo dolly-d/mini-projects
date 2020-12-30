@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     (doodlerLeftSpace <= (platform.left + 85)) &&
                     !isJumping
                 ){
-                    console.log('landed')
+                    // console.log('landed')
                     startPoint = doodlerBottomSpace
                     jump()
                 }
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }, 30);
     }
     gameOver=()=>{
-        console.log('game over')
+        // console.log('game over')
         isGameOver = true
         clearInterval(upTimerId)
         clearInterval(downTimerId)
