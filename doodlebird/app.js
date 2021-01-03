@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     firstPlatform.classList.remove('platform')
                     platforms.shift()
                     score++
-                    console.log(platforms)
+                    // console.log(platforms)
                     let newPlatform = new Platform(600)
                     platforms.push(newPlatform)
                 }
