@@ -1,25 +1,30 @@
-.grid {
-    width: 400px;
-    height: 600px;
-    background-image: url('jungle.png');
-    position: relative;
-    font-size: 200px;
-    text-align: center;
-    
+:root{
+    --current-value: rgb(60,179,113)
 
 }
-
-.doodler{
-    width: 87px;
-    height: 85px;
-    background-image: url('parrot.png');
-    position: absolute;
+    
+    .grid {
+        width: 400px;
+        height: 600px;
+        background-image: url('jungle.png');
+        position: relative;
+        font-size: 200px;
+        text-align: center;
+        
+        
+    }
+    
+    .doodler{
+        width: 87px;
+        height: 85px;
+        background-image: url('parrot.png');
+        position: absolute;
 }
 
 .platform{
     width: 85px;
     height: 15px;
-    background-color: whitesmoke;
+    background-color: var(--current-value);
     position: absolute;
 
 }
