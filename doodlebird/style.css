@@ -4,20 +4,23 @@
 }
     
     .grid {
-        width: 400px;
+        width: 800px;
         height: 600px;
         background-image: url('jungle.png');
         position: relative;
-        font-size: 200px;
+        /*font-size: 200px;
         text-align: center;
-        
+         */
+        background-color: green;
         
     }
     
     .doodler{
         width: 87px;
-        height: 85px;
+        height: 155px;
         background-image: url('parrot.png');
+        background-repeat: no-repeat;
+        background-size: 65px;
         position: absolute;
 }
 

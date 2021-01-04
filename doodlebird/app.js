@@ -42,10 +42,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
             this.visual = document.createElement('div')
 
             const rgb = randomRBG()
+            const colors = `rgb(${rgb[0]},${rgb[1]},${rgb[2]})`
             const visual = this.visual
             visual.classList.add('platform')
             visual.style.left = this.left + 'px'
             visual.style.bottom = this.bottom + 'px'
+            console.log(colors)
+            visual.style.setProperty('--current-value', colors)
             grid.appendChild(visual)
         }
     }
@@ -96,7 +99,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             doodlerBottomSpace -= 5
             doodler.style.bottom = doodlerBottomSpace + 'px'
             if (doodlerBottomSpace <= 0){
-                gameOver()
+                //gameOver()
             }
             
             platforms.forEach(platform => {
