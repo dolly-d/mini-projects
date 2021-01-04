@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
         max = Math.floor(max)
         return Math.floor(Math.random() * (max -min + 1) + min)
     }
+    const randomRBG = ()=>[
+        randomNumber(0,255),
+        randomNumber(0,255),
+        randomNumber(0,255)
+    ]
 
     createDoodler =()=>{
         grid.appendChild(doodler)
@@ -36,6 +41,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             this.left = Math.random() * 315
             this.visual = document.createElement('div')
 
+            const rgb = randomRBG()
             const visual = this.visual
             visual.classList.add('platform')
             visual.style.left = this.left + 'px'
