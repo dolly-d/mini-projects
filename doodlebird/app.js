@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             doodlerBottomSpace -= 5
             doodler.style.bottom = doodlerBottomSpace + 'px'
             if (doodlerBottomSpace <= 0){
-                //gameOver()
+                gameOver()
             }
             
             platforms.forEach(platform => {
