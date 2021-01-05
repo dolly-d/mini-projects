@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }, 30);
     }
     gameOver=()=>{
-        // console.log('game over')
+        console.log('game over')
         isGameOver = true
         while (grid.firstChild){
             grid.removeChild(grid.firstChild)
