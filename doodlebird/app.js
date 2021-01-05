@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             let newPlatformBottom = 100 + i * platformSpace
             let newPlatform = new Platform(newPlatformBottom)
             platforms.push(newPlatform)
-            // console.log(platforms)
+            console.log(platforms)
         }
     }
     movePlatforms=()=>{
