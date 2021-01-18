@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
     }
 
-    collision=(e)=>{
-        
+    collisionDetection=(e)=>{
+
     }
 
     moveLeft=()=>{
