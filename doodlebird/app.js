@@ -140,6 +140,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
     }
 
+    collision=(e)=>{
+        
+    }
+
     moveLeft=()=>{
         if (isGoingRight){
             clearInterval(rightTimerId)
