@@ -141,7 +141,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
 
     collisionDetection=(e)=>{
-        for(var c=0; c<brickColumn)
+        for(var c=0; c<brickColumn; c++){
+            for( var=0; r<brick)
+        }
     }
 
     moveLeft=()=>{
